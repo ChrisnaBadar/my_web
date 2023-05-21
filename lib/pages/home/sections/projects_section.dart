@@ -192,7 +192,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
   Widget _buildNimbusInfoSectionSm() {
     return NimbusInfoSection2(
       sectionTitle: StringConst.MY_WORKS,
-      title1: StringConst.MEET_MY_PROJECTS,
+      title1: StringConst.MEET_OUR_PROJECTS,
       hasTitle2: false,
       body: StringConst.PROJECTS_DESC,
 //      child: ,
@@ -203,7 +203,7 @@ class _ProjectsSectionState extends State<ProjectsSection>
   Widget _buildNimbusInfoSectionLg() {
     return NimbusInfoSection1(
       sectionTitle: StringConst.MY_WORKS,
-      title1: StringConst.MEET_MY_PROJECTS,
+      title1: StringConst.MEET_OUR_PROJECTS,
       hasTitle2: false,
       body: StringConst.PROJECTS_DESC,
       child: Wrap(
