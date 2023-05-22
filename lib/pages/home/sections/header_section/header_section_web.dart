@@ -141,7 +141,7 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                   Container(
                     margin: EdgeInsets.only(top: heightOfStack * 0.05),
                     child: SelectableText(
-                      StringConst.COMPANY,
+                      StringConst.FIRST_NAME,
                       style: textTheme.displayLarge?.copyWith(
                         color: AppColors.grey50,
                         fontSize: headerIntroTextSize * 2,
