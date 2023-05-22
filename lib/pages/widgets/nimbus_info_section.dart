@@ -41,7 +41,7 @@ class NimbusInfoSection1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
-    TextStyle? titleStyle = textTheme.headline3?.copyWith(
+    TextStyle? titleStyle = textTheme.displaySmall?.copyWith(
       fontSize: responsiveSize(context, 26, 36, md: 32),
     );
     double fontSize = responsiveSize(context, 16, 18);
@@ -56,7 +56,7 @@ class NimbusInfoSection1 extends StatelessWidget {
                   quarterTurns: quarterTurns,
                   child: Text(
                     sectionTitle,
-                    style: textTheme.bodyText2?.copyWith(
+                    style: textTheme.bodyMedium?.copyWith(
                       fontSize: fontSize,
                       fontWeight: FontWeight.w400,
                       color: AppColors.grey250,

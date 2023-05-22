@@ -5,6 +5,16 @@ class ImagePath {
   static const String imageDir = "assets/images";
   static const String screenshotsDir = "assets/screenshots";
 
+  //AMALA
+  static const String AMALA_MOCKUP = "$imageDir/amala_mockup.png";
+  static const String AMALA_MOCKUP_2 = "$imageDir/amala_mockup_2.png";
+
+  //GSP
+  static const String BUILDING_PLAN = "$imageDir/building_plan.png";
+  static const String CONSTRUCTION = "$imageDir/construction.png";
+  static const String CONSTRUCTION_2 = "$imageDir/construction_2.png";
+  static const String CLEANING_SERVICE = "$imageDir/cleaning_service.png";
+
   // Logo
   static const String LOGO_DARK = "$imageDir/logo_dark.png";
   static const String LOGO_LIGHT = "$imageDir/logo_light.png";

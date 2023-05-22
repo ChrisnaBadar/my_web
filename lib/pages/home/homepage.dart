@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:my_web/pages/home/sections/about_me_section.dart';
+import 'package:my_web/pages/home/sections/about_section.dart';
 import 'package:my_web/pages/home/sections/awards_section.dart';
 import 'package:my_web/pages/home/sections/blog_section.dart';
 import 'package:my_web/pages/home/sections/footer_section.dart';
@@ -131,37 +131,23 @@ class _HomepageState extends State<Homepage>
               child: Column(
                 children: [
                   //_______ 1
-                  Stack(
-                    children: [
-                      Positioned.fill(
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Image.asset(ImagePath.BLOB_BEAN_ASH),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          HeaderSection(
-                            key: navItems[0].key,
-                          ),
-                          SizedBox(height: spacerHeight),
-                          VisibilityDetector(
-                            key: const Key("about"),
-                            onVisibilityChanged: (visibilityInfo) {
-                              double visiblePercentage =
-                                  visibilityInfo.visibleFraction * 100;
-                              if (visiblePercentage > 10) {
-                                _animationController.forward();
-                              }
-                            },
-                            child: Container(
-                              key: navItems[1].key,
-                              child: AboutMeSection(),
-                            ),
-                          ),
-                        ],
-                      )
-                    ],
+                  HeaderSection(
+                    key: navItems[0].key,
+                  ),
+                  SizedBox(height: spacerHeight),
+                  VisibilityDetector(
+                    key: const Key("about"),
+                    onVisibilityChanged: (visibilityInfo) {
+                      double visiblePercentage =
+                          visibilityInfo.visibleFraction * 100;
+                      if (visiblePercentage > 10) {
+                        _animationController.forward();
+                      }
+                    },
+                    child: Container(
+                      key: navItems[1].key,
+                      child: AboutMeSection(),
+                    ),
                   ),
 
                   //_______

@@ -48,25 +48,30 @@ class StringConst {
   static const String HTML = "HTML";
   static const String CSS = "CSS";
 
-  //AboutUs Section
-  static const String ABOUT_US = "about us";
-  static const String ABOUT_US_DESC =
-      "Kami, PT. Global Solution Provider, menyediakan solusi kontraktor dan outsourcing terdepan untuk memenuhi kebutuhan bisnis Anda. Dengan keahlian kami dalam berbagai sektor industri, kami menawarkan layanan inovatif dan berkualitas tinggi yang akan meningkatkan efisiensi operasional dan produktivitas perusahaan Anda. Percayakan pada kami untuk mendapatkan solusi bisnis yang handal dan terpercaya.";
-  static const String ABOUT_ME_DESC_1 =
-      "Product Designer and Digital Creative Director working in design ";
-  static const String ABOUT_ME_DESC_2 =
-      "field for 13 years so far, specialized in UI/UX, Branding and digital";
-  static const String ABOUT_ME_DESC_3 =
-      "designs. These are the words we live by in everything we do. Every";
-  static const String ABOUT_ME_DESC_4 =
-      "story we tell, every brand we build, and every interaction we";
-  static const String ABOUT_ME_DESC_5 =
-      "create must not only look beautiful. beautifully, too.";
-  static const String CREATIVE_DESIGN = "Need Building Planning or Ousourcing?";
-  static const String HELP = "We can Help You!";
-  static const String FOLLOW_ME_1 = "You can also follow me here:";
-  static const String DRIBBLE = "Dribble";
-  static const String INSTA = "Insta";
+  //AboutUs construction Section
+  static const String ABOUT_CONST = "about construction";
+  static const String ABOUT_CONST_DESC =
+      "Kami, PT. Global Solution Provider, adalah penyedia jasa konstruksi bangunan yang terpercaya. Dengan pengalaman dan keahlian yang luas, kami menawarkan solusi pelaksanaan proyek konstruksi berkualitas tinggi. Tim kami yang terampil dan terlatih siap membantu Anda dalam membangun proyek bangunan yang aman, efisien, dan sesuai dengan standar kualitas yang tinggi. Percayakan kepada kami untuk menghasilkan bangunan yang kokoh dan memukau.";
+  static const String CONSTRUCTION_INTRO =
+      "Need Building Construction Service?";
+  static const String CONST_HELP = "We can Help You!";
+  static const String CONST_CHECK = "Check out our offer:";
+  static const String HIRE_US = "Hire Us";
+  static const String MORE_INFO = "More Info";
+  //AboutUs outsource Section
+  static const String ABOUT_OUTSOURCE = "about outsourcing";
+  static const String ABOUT_OUTSOURCE_DESC =
+      "Kami, PT. Global Solution Provider, adalah mitra ideal Anda dalam layanan outsourcing cleaning service. Dengan tim profesional yang terlatih, kami menawarkan solusi pembersihan yang efisien dan berkualitas tinggi untuk memenuhi kebutuhan lingkungan kerja Anda. Dengan pendekatan yang fleksibel, kami menyediakan layanan yang disesuaikan dengan permintaan klien, menjaga kebersihan dan kenyamanan tempat kerja agar selalu optimal. Percayakan kepada kami untuk menciptakan lingkungan kerja yang bersih dan sehat.";
+  static const String OUTSOURCE_INTRO = "Need Cleaning Service Outsource?";
+  static const String OUTSOURCE_HELP = "We can Help You!";
+  static const String OUTSOURCE_CHECK = "Check out our offer:";
+  //AboutUs AMALA Section
+  static const String ABOUT_AMALA = "about amala";
+  static const String ABOUT_AMALA_DESC =
+      "Amala adalah aplikasi android yang dirancang dengan fokus pada pencatatan ibadah sehari-hari dengan standar Yaumi Daarut Tauhiid dan absensi online. Aplikasi ini dapat digunakan oleh siapa saja, baik individu, kelompok kecil, atau lembaga besar. Aplikasi ini memiliki fitur-fitur yang inovatif dan mudah digunakan, yang akan membantu Anda dalam memantau kegiatan sehari-hari Anda.";
+  static const String AMALA_INTRO = "Need Muthaba\'ah Yaumiah app?";
+  static const String AMALA_HELP = "We can Help You!";
+  static const String AMALA_CHECK = "Check out our offer:";
 
   //Skills Section
   static const String MY_SKILLS = "my skills";
@@ -183,9 +188,9 @@ class StringConst {
   static const String FOLLOW_ME_2_URL = "behance.net/nimbus2000";
   static const String RIGHTS_RESERVED = "© 2021 All rights reserved";
   static const String BUILT_BY = "Built with Flutter by";
-  static const String DAVID_COBBINA = "David Cobbina";
+  static const String DAVID_COBBINA = "Zatunr Studio";
   static const String DESIGNED_BY = "Designed by";
-  static const String WEB_GENIUS_LAB = "WebGeniusLab";
+  static const String WEB_GENIUS_LAB = "Chrisna Badar";
   static const String MADE_IN_GHANA = "Made in";
   static const String WITH_LOVE = "with";
   static const String FIND_ME = "Find me on..";
