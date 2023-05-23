@@ -189,9 +189,15 @@ class Data {
 
   static List<ConstProjectData> allConstProjects = [
     ConstProjectData(
-        title: StringConst.PORTFOLIO_CONST_1_TITLE,
-        client: StringConst.PORTFOLIO_CONST_1_CLIENT,
-        nilaiProyek: StringConst.PORTFOLIO_CONST_1_VALUE)
+        title: StringConst.PORTOFOLIO_CONSTRUCTION_1_TITLE,
+        client: StringConst.PORTOFOLIO_CONSTRUCTION_1_CLIENT,
+        value: StringConst.PORTOFOLIO_CONSTRUCTION_1_VALUE,
+        year: StringConst.PORTOFOLIO_CONSTRUCTION_1_YEAR),
+    ConstProjectData(
+        title: StringConst.PORTOFOLIO_CONSTRUCTION_2_TITLE,
+        client: StringConst.PORTOFOLIO_CONSTRUCTION_2_CLIENT,
+        value: StringConst.PORTOFOLIO_CONSTRUCTION_2_VALUE,
+        year: StringConst.PORTOFOLIO_CONSTRUCTION_2_YEAR)
   ];
 
   static List<ProjectData> allProjects = [

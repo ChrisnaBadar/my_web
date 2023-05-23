@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:my_web/constants/values.dart';
 
 class PortofolioPage extends StatefulWidget {
   const PortofolioPage({super.key});
@@ -45,17 +46,30 @@ class _PortofolioPageState extends State<PortofolioPage> {
                     ),
                     Expanded(
                       child: ListView.builder(
-                        itemCount: 111,
+                        itemCount: Data.allConstProjects.length,
                         itemBuilder: (context, index) {
                           return Padding(
                             padding: const EdgeInsets.only(top: 16.0),
-                            child: SelectableText(
-                              'Proyek Masjid Daarut Tauhiid',
-                              style: GoogleFonts.montserrat(
-                                  textStyle: TextStyle(
-                                fontSize: 17.5,
-                              )),
-                              textAlign: TextAlign.right,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                SelectableText(
+                                  Data.allConstProjects[index].title,
+                                  style: GoogleFonts.montserrat(
+                                      textStyle: TextStyle(
+                                    fontSize: 17.5,
+                                  )),
+                                  textAlign: TextAlign.right,
+                                ),
+                                SelectableText(
+                                  Data.allConstProjects[index].client,
+                                  style: GoogleFonts.montserrat(
+                                      textStyle: TextStyle(
+                                    fontSize: 12.5,
+                                  )),
+                                  textAlign: TextAlign.right,
+                                ),
+                              ],
                             ),
                           );
                         },

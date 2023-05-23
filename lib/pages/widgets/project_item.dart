@@ -29,12 +29,13 @@ class ProjectData {
 class ConstProjectData {
   final String title;
   final String client;
-  final String nilaiProyek;
-  ConstProjectData({
-    required this.title,
-    required this.client,
-    required this.nilaiProyek,
-  });
+  final String value;
+  final String year;
+  ConstProjectData(
+      {required this.title,
+      required this.client,
+      required this.value,
+      required this.year});
 }
 
 class ProjectItem extends StatefulWidget {
