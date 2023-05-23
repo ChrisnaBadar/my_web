@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:layout/layout.dart';
 import 'package:my_web/pages/home/homepage.dart';
+import 'package:my_web/utils/app_router.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: Homepage(),
+        routes: AppRouter().appRoute,
       ),
     );
   }

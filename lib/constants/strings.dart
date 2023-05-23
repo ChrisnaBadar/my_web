@@ -99,14 +99,14 @@ class StringConst {
       "We believe direct collaboration with our clients is essential to bringing unique";
 
   //Stats Section
-  static const String HAPPY_CLIENTS = "Happy Clients";
-  static const String HAPPY_CLIENTS_NUM = "120";
+  static const String OUTSOURCE_CLIENTS = "Outsource Clients";
+  static const String OUTSOURCE_CLIENTS_NUM = "13";
   static const String YEARS_OF_EXPERIENCE = "Years of Experience";
-  static const String YEARS_OF_EXPERIENCE_NUM = "10";
-  static const String INCREDIBLE_PROJECTS = "Incredible Projects";
-  static const String INCREDIBLE_PROJECTS_NUM = "230";
-  static const String AWARD_WINNING = "Award Winning";
-  static const String AWARD_WINNING_NUM = "18";
+  static const String YEARS_OF_EXPERIENCE_NUM = "20";
+  static const String CONST_PROJECTS = "Construction Projects";
+  static const String CONST_PROJECTS_NUM = "116";
+  static const String CONST_CLIENTS = "Construction Clients";
+  static const String AWARD_WINNING_NUM = "95";
 
   //Projects Section
   static const String MEET_OUR_PROJECTS = "Meet Our Projects";
@@ -119,12 +119,40 @@ class StringConst {
   static const String PERENCANAAN = "Perencanaan";
   static const String CLEANING_SERVICE = "Cleaning Service";
   static const String APP_DEV = "App Developer";
-  static const String PORTFOLIO_1_TITLE = "Urban Experience";
-  static const String PORTFOLIO_2_TITLE = "Graphic Design";
-  static const String PORTFOLIO_3_TITLE = "Launch Product";
-  static const String PORTFOLIO_4_TITLE = "3D Animation";
-  static const String PORTFOLIO_5_TITLE = "Collect Idea";
-  static const String PORTFOLIO_6_TITLE = "Company Branding";
+  //PORTOFOLIO KONSTRUKSI
+  static const String PORTFOLIO_CONST_1_TITLE = "Masjid Daarut Tauhiid";
+  static const String PORTFOLIO_CONST_1_CLIENT = "Yayasan Daarut Tauhiid";
+  static const String PORTFOLIO_CONST_1_VALUE = "8 Miliar";
+  static const String PORTFOLIO_CONST_2_TITLE = "Gedung PMK";
+  static const String PORTFOLIO_CONST_3_TITLE = "Gedung HKT";
+  static const String PORTFOLIO_CONST_4_TITLE = "Gedung RPA";
+  static const String PORTFOLIO_CONST_5_TITLE = "Dome Central 5";
+  static const String PORTFOLIO_CONST_6_TITLE = "Gedung Asrama ECO Pesantren";
+  static const String PORTFOLIO_CONST_7_TITLE = "Gedung RKB Eco Pesantren";
+  static const String PORTFOLIO_CONST_8_TITLE = "Dome Eco Pesantren";
+  static const String PORTFOLIO_CONST_9_TITLE = "Gedung Ruang Guru";
+  static const String PORTFOLIO_CONST_10_TITLE = "Gedung DTP";
+  static const String PORTFOLIO_CONST_11_TITLE = "Masjid Agung Ciparay";
+  static const String PORTFOLIO_CONST_12_TITLE = "Cluste  r Budi Asri";
+  static const String PORTFOLIO_CONST_13_TITLE = "Unit Graha Bukit Raya";
+  static const String PORTFOLIO_CONST_14_TITLE = "unit Cihajuang";
+  static const String PORTFOLIO_CONST_15_TITLE = "Rumah Santri";
+  static const String PORTFOLIO_CONST_16_TITLE = "Gedung Pendidikan STAI";
+  static const String PORTFOLIO_CONST_17_TITLE = "Gedung DTP Salatiga";
+  //POROTOFOLIO OUTSOURCING
+  static const String PORTFOLIO_OUTSOURCE_1_TITLE = "Gedung DTP Salatiga";
+  static const String PORTFOLIO_OUTSOURCE_2_TITLE = 'RS. Al Islam, Janaiz';
+  static const String PORTFOLIO_OUTSOURCE_3_TITLE = 'RS. Al Islam, IGD';
+  static const String PORTFOLIO_OUTSOURCE_4_TITLE = 'RS. Al Islam, UGD';
+  static const String PORTFOLIO_OUTSOURCE_5_TITLE = 'RS. Al Islam, Helper ';
+  static const String PORTFOLIO_OUTSOURCE_6_TITLE = 'RS. Al Islam, Pinere';
+  static const String PORTFOLIO_OUTSOURCE_7_TITLE = 'RS. Al Islam, Laundry';
+  static const String PORTFOLIO_OUTSOURCE_8_TITLE = 'PT. Arco Tritama Mandiri';
+  static const String PORTFOLIO_OUTSOURCE_9_TITLE = 'Sukses Belajar Kuliner';
+  static const String PORTFOLIO_OUTSOURCE_10_TITLE = 'PT. Lintas Cakra Cipta';
+  static const String PORTFOLIO_OUTSOURCE_11_TITLE = 'Inno Factory';
+  static const String PORTFOLIO_OUTSOURCE_12_TITLE = 'Kopontren, BMT';
+  static const String PORTFOLIO_OUTSOURCE_13_TITLE = 'Kopontren Adpus';
 
   //Awards & Section
   static const String MY = "My";

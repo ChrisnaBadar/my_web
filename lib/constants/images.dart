@@ -52,8 +52,8 @@ class ImagePath {
   static const String BLOG_02 = "$imageDir/blog_02.jpg";
   static const String BLOG_03 = "$imageDir/blog_03.jpg";
 
-  // Portfolio Images
-  static const String PORTFOLIO_1 = "$imageDir/portfolio_01.jpg";
+  // Portfolio konstruksi Images
+  static const String PORTFOLIO_1 = "$imageDir/masjid_daarut_tauhiid.jpg";
   static const String PORTFOLIO_2 = "$imageDir/portfolio_02.jpg";
   static const String PORTFOLIO_3 = "$imageDir/portfolio_03.jpg";
   static const String PORTFOLIO_4 = "$imageDir/portfolio_04.jpg";

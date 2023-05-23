@@ -88,18 +88,39 @@ class Data {
         iconData: Icons.pages_outlined), //not being used
   ];
   static List<StatItemData> statItemsData = [
-    StatItemData(value: 120, subtitle: StringConst.HAPPY_CLIENTS),
-    StatItemData(value: 10, subtitle: StringConst.YEARS_OF_EXPERIENCE),
-    StatItemData(value: 230, subtitle: StringConst.INCREDIBLE_PROJECTS),
-    StatItemData(value: 18, subtitle: StringConst.AWARD_WINNING),
+    StatItemData(value: 75, subtitle: StringConst.CONST_CLIENTS),
+    StatItemData(value: 20, subtitle: StringConst.YEARS_OF_EXPERIENCE),
+    StatItemData(value: 116, subtitle: StringConst.CONST_PROJECTS),
+    StatItemData(value: 18, subtitle: StringConst.OUTSOURCE_CLIENTS),
   ];
 
   static List<ProjectCategoryData> projectCategories = [
-    ProjectCategoryData(title: StringConst.ALL, number: 6, isSelected: true),
-    ProjectCategoryData(title: StringConst.KONSTRUKSI, number: 1),
-    ProjectCategoryData(title: StringConst.CLEANING_SERVICE, number: 1),
-    ProjectCategoryData(title: StringConst.OUTSOURCE, number: 2),
-    ProjectCategoryData(title: StringConst.APP_DEV, number: 3),
+    ProjectCategoryData(
+        title: StringConst.ALL, number: allProjects.length, isSelected: true),
+    ProjectCategoryData(
+        title: StringConst.KONSTRUKSI,
+        number: allProjects
+            .where((e) => e.category == StringConst.KONSTRUKSI)
+            .toList()
+            .length),
+    ProjectCategoryData(
+        title: StringConst.CLEANING_SERVICE,
+        number: allProjects
+            .where((e) => e.category == StringConst.CLEANING_SERVICE)
+            .toList()
+            .length),
+    ProjectCategoryData(
+        title: StringConst.OUTSOURCE,
+        number: allProjects
+            .where((e) => e.category == StringConst.OUTSOURCE)
+            .toList()
+            .length),
+    ProjectCategoryData(
+        title: StringConst.APP_DEV,
+        number: allProjects
+            .where((e) => e.category == StringConst.APP_DEV)
+            .toList()
+            .length),
   ];
 
   static List<String> awards1 = [
@@ -164,96 +185,105 @@ class Data {
     ),
   ];
 
+  //  PROJECTS RELATED =====================================================
+
+  static List<ConstProjectData> allConstProjects = [
+    ConstProjectData(
+        title: StringConst.PORTFOLIO_CONST_1_TITLE,
+        client: StringConst.PORTFOLIO_CONST_1_CLIENT,
+        nilaiProyek: StringConst.PORTFOLIO_CONST_1_VALUE)
+  ];
+
   static List<ProjectData> allProjects = [
     ProjectData(
-      title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.CLEANING_SERVICE,
+      title: StringConst.PORTFOLIO_CONST_1_TITLE,
+      category: StringConst.KONSTRUKSI,
       projectCoverUrl: ImagePath.PORTFOLIO_1,
       width: 0.5,
       mobileHeight: 0.3,
     ),
     ProjectData(
-      title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.APP_DEV,
+      title: StringConst.PORTFOLIO_CONST_2_TITLE,
+      category: StringConst.KONSTRUKSI,
       projectCoverUrl: ImagePath.PORTFOLIO_2,
       width: 0.225,
     ),
     ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
+      title: StringConst.PORTFOLIO_CONST_3_TITLE,
       category: StringConst.KONSTRUKSI,
       projectCoverUrl: ImagePath.PORTFOLIO_3,
       width: 0.225,
     ),
     ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.APP_DEV,
-      projectCoverUrl: ImagePath.PORTFOLIO_4,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PERENCANAAN,
-      projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.CLEANING_SERVICE,
-      projectCoverUrl: ImagePath.PORTFOLIO_6,
-      width: 0.475,
-      mobileHeight: 0.3,
-    ),
-  ];
-  static List<ProjectData> branding = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_3_TITLE,
+      title: StringConst.PORTFOLIO_CONST_4_TITLE,
       category: StringConst.KONSTRUKSI,
-      projectCoverUrl: ImagePath.PORTFOLIO_3,
-      width: 0.225,
+      projectCoverUrl: ImagePath.PORTFOLIO_4,
+      width: 0.2375,
     ),
-  ];
-  static List<ProjectData> packaging = [
     ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.PERENCANAAN,
+      title: StringConst.PORTFOLIO_CONST_5_TITLE,
+      category: StringConst.KONSTRUKSI,
       projectCoverUrl: ImagePath.PORTFOLIO_5,
       width: 0.2375,
     ),
-  ];
-  static List<ProjectData> photograhy = [
     ProjectData(
-      title: StringConst.PORTFOLIO_1_TITLE,
-      category: StringConst.CLEANING_SERVICE,
-      projectCoverUrl: ImagePath.PORTFOLIO_1,
-      width: 0.5,
-      mobileHeight: 0.3,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_6_TITLE,
-      category: StringConst.CLEANING_SERVICE,
+      title: StringConst.PORTFOLIO_CONST_6_TITLE,
+      category: StringConst.KONSTRUKSI,
       projectCoverUrl: ImagePath.PORTFOLIO_6,
       width: 0.475,
       mobileHeight: 0.3,
     ),
   ];
-  static List<ProjectData> webDesign = [
-    ProjectData(
-      title: StringConst.PORTFOLIO_2_TITLE,
-      category: StringConst.APP_DEV,
-      projectCoverUrl: ImagePath.PORTFOLIO_2,
-      width: 0.225,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_4_TITLE,
-      category: StringConst.APP_DEV,
-      projectCoverUrl: ImagePath.PORTFOLIO_4,
-      width: 0.2375,
-    ),
-    ProjectData(
-      title: StringConst.PORTFOLIO_5_TITLE,
-      category: StringConst.CLEANING_SERVICE,
-      projectCoverUrl: ImagePath.PORTFOLIO_5,
-      width: 0.2375,
-    ),
-  ];
+  // static List<ProjectData> branding = [
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_3_TITLE,
+  //     category: StringConst.KONSTRUKSI,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_3,
+  //     width: 0.225,
+  //   ),
+  // ];
+  // static List<ProjectData> packaging = [
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_5_TITLE,
+  //     category: StringConst.PERENCANAAN,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_5,
+  //     width: 0.2375,
+  //   ),
+  // ];
+  // static List<ProjectData> photograhy = [
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_1_TITLE,
+  //     category: StringConst.CLEANING_SERVICE,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_1,
+  //     width: 0.5,
+  //     mobileHeight: 0.3,
+  //   ),
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_6_TITLE,
+  //     category: StringConst.CLEANING_SERVICE,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_6,
+  //     width: 0.475,
+  //     mobileHeight: 0.3,
+  //   ),
+  // ];
+  // static List<ProjectData> webDesign = [
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_2_TITLE,
+  //     category: StringConst.APP_DEV,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_2,
+  //     width: 0.225,
+  //   ),
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_4_TITLE,
+  //     category: StringConst.APP_DEV,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_4,
+  //     width: 0.2375,
+  //   ),
+  //   ProjectData(
+  //     title: StringConst.PORTFOLIO_5_TITLE,
+  //     category: StringConst.CLEANING_SERVICE,
+  //     projectCoverUrl: ImagePath.PORTFOLIO_5,
+  //     width: 0.2375,
+  //   ),
+  // ];
 }

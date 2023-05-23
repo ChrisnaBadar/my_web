@@ -38,10 +38,13 @@ class _ProjectsSectionState extends State<ProjectsSection>
   late Animation<double> _projectScaleAnimation;
   List<List<ProjectData>> projects = [
     Data.allProjects,
-    Data.branding,
-    Data.packaging,
-    Data.photograhy,
-    Data.webDesign,
+    Data.allProjects
+        .where((element) => element.category == StringConst.KONSTRUKSI)
+        .toList(),
+    Data.allProjects
+        .where((element) => element.category == StringConst.CLEANING_SERVICE)
+        .toList(),
+    []
   ];
   late List<ProjectData> selectedProject;
   late List<ProjectCategoryData> projectCategories;
@@ -163,7 +166,9 @@ class _ProjectsSectionState extends State<ProjectsSection>
                           NimbusButton(
                             buttonTitle: StringConst.ALL_PROJECTS,
                             buttonColor: AppColors.primaryColor,
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.pushNamed(context, '/portofolioPage');
+                            },
                           ),
                         ],
                       ),
@@ -350,7 +355,7 @@ class _ProjectCategoryState extends State<ProjectCategory>
                 style: widget.titleStyle?.copyWith(
                       color: colorOfCategory(),
                     ) ??
-                    textTheme.subtitle1?.copyWith(
+                    textTheme.titleMedium?.copyWith(
                       fontSize: Sizes.TEXT_SIZE_16,
                       color: colorOfCategory(),
                     ),
@@ -384,7 +389,7 @@ class _ProjectCategoryState extends State<ProjectCategory>
         style: widget.numberStyle?.copyWith(
               color: widget.hoverColor,
             ) ??
-            textTheme.subtitle1?.copyWith(
+            textTheme.titleMedium?.copyWith(
               fontSize: Sizes.TEXT_SIZE_16,
               color: widget.hoverColor,
             ),

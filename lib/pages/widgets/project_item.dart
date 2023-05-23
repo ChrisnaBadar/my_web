@@ -1,4 +1,6 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
+
 import 'package:my_web/pages/widgets/spaces.dart';
 
 import '../../constants/values.dart';
@@ -21,6 +23,17 @@ class ProjectData {
     this.mobileHeight = 0.5,
     this.mobileWidth = 1.0,
     this.height = 0.4,
+  });
+}
+
+class ConstProjectData {
+  final String title;
+  final String client;
+  final String nilaiProyek;
+  ConstProjectData({
+    required this.title,
+    required this.client,
+    required this.nilaiProyek,
   });
 }
 
@@ -117,7 +130,7 @@ class _ProjectItemState extends State<ProjectItem>
               widget.imageUrl,
               width: widget.width,
               height: widget.height,
-              fit: BoxFit.fill,
+              fit: BoxFit.cover,
             ),
             Positioned(
               bottom: 0,
@@ -196,10 +209,10 @@ class ProjectCover extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          AnimatedHoverIndicator2(
-            animation: animation,
-            indicatorColor: indicatorColor,
-          ),
+          // AnimatedHoverIndicator2(
+          //   animation: animation,
+          //   indicatorColor: indicatorColor,
+          // ),
           SpaceW16(),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -208,7 +221,7 @@ class ProjectCover extends StatelessWidget {
               Text(
                 title,
                 style: titleStyle ??
-                    textTheme.headline6?.copyWith(
+                    textTheme.titleLarge?.copyWith(
                       color: AppColors.white,
                     ),
               ),
@@ -216,7 +229,7 @@ class ProjectCover extends StatelessWidget {
               Text(
                 subtitle,
                 style: subtitleStyle ??
-                    textTheme.subtitle2?.copyWith(
+                    textTheme.titleSmall?.copyWith(
                       color: AppColors.white,
                       fontSize: Sizes.TEXT_SIZE_16,
                     ),
