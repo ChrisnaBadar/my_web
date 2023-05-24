@@ -57,12 +57,36 @@ class _PortofolioPageState extends State<PortofolioPage> {
                                   Data.allConstProjects[index].title,
                                   style: GoogleFonts.montserrat(
                                       textStyle: TextStyle(
-                                    fontSize: 17.5,
+                                    fontSize: 30.5,
                                   )),
                                   textAlign: TextAlign.right,
                                 ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
+                                    SelectableText(
+                                      'Client: ${Data.allConstProjects[index].client}',
+                                      style: GoogleFonts.montserrat(
+                                          textStyle: TextStyle(
+                                        fontSize: 12.5,
+                                      )),
+                                      textAlign: TextAlign.right,
+                                    ),
+                                    SizedBox(
+                                      width: 16.0,
+                                    ),
+                                    SelectableText(
+                                      'Tahun: ${Data.allConstProjects[index].year}',
+                                      style: GoogleFonts.montserrat(
+                                          textStyle: TextStyle(
+                                        fontSize: 12.5,
+                                      )),
+                                      textAlign: TextAlign.right,
+                                    ),
+                                  ],
+                                ),
                                 SelectableText(
-                                  Data.allConstProjects[index].client,
+                                  'Nilai Proyek: ${Data.allConstProjects[index].value}',
                                   style: GoogleFonts.montserrat(
                                       textStyle: TextStyle(
                                     fontSize: 12.5,
