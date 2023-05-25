@@ -187,12 +187,12 @@ class _AppDrawerState extends State<AppDrawer> {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(StringConst.MADE_IN_GHANA, style: footerTextStyle),
+            Text(StringConst.MADE_IN, style: footerTextStyle),
             SpaceW4(),
             ClipRRect(
               borderRadius: BorderRadius.all(const Radius.circular(20)),
               child: Image.asset(
-                ImagePath.GHANA_FLAG,
+                ImagePath.INDONESIA_FLAG,
                 width: Sizes.WIDTH_16,
                 height: Sizes.HEIGHT_16,
                 fit: BoxFit.cover,

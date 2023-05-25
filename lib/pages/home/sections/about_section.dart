@@ -107,6 +107,39 @@ class _AboutMeSectionState extends State<AboutMeSection>
                       height: screenHeight,
                     ),
                   ),
+                  SpaceH40(),
+                  ContentArea(
+                    width: contentAreaWidthSm,
+                    child: _buildOutsourceImage(
+                      width: contentAreaWidthSm,
+                      height: contentAreaHeightSm,
+                    ),
+                  ),
+                  SpaceH40(),
+                  ContentArea(
+                    width: contentAreaWidthSm,
+                    child: _buildAbouOutsource(
+                      width: contentAreaWidthSm,
+                      height: screenHeight,
+                    ),
+                  ),
+                  SpaceH40(),
+                  ContentArea(
+                    width: contentAreaWidthSm,
+                    child: _buildAmalaImage(
+                      width: contentAreaWidthSm,
+                      height: contentAreaHeightSm,
+                    ),
+                  ),
+                  SpaceH40(),
+                  ContentArea(
+                    width: contentAreaWidthSm,
+                    child: _buildAboutAmala(
+                      width: contentAreaWidthSm,
+                      height: screenHeight,
+                    ),
+                  ),
+                  SpaceH40(),
                 ],
               );
             } else {

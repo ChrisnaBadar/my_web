@@ -24,9 +24,9 @@ List<FooterItem> footerItems = [
     iconData: FontAwesomeIcons.paperPlane,
   ),
   FooterItem(
-    title: StringConst.FOLLOW_ME_2 + ":",
+    title: StringConst.ADDRESS + ":",
     subtitle: StringConst.ADDRESS_DETAIL,
-    iconData: FontAwesomeIcons.behance,
+    iconData: FontAwesomeIcons.addressCard,
   ),
 ];
 
@@ -171,12 +171,12 @@ class _FooterSectionState extends State<FooterSection> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(StringConst.MADE_IN_GHANA, style: footerTextStyle),
+              Text(StringConst.MADE_IN, style: footerTextStyle),
               SpaceW4(),
               ClipRRect(
                 borderRadius: BorderRadius.all(const Radius.circular(20)),
                 child: Image.asset(
-                  ImagePath.GHANA_FLAG,
+                  ImagePath.INDONESIA_FLAG,
                   width: Sizes.WIDTH_16,
                   height: Sizes.HEIGHT_16,
                   fit: BoxFit.cover,
@@ -264,14 +264,14 @@ class _FooterSectionState extends State<FooterSection> {
                   Text(
                     StringConst.LETS_TALK,
                     textAlign: TextAlign.center,
-                    style:
-                        textTheme.headline4?.copyWith(color: AppColors.white),
+                    style: textTheme.headlineMedium
+                        ?.copyWith(color: AppColors.white),
                   ),
                   SpaceH60(),
                   ..._buildFooterItems(footerItems),
                   SpaceH60(),
                   NimbusButton(
-                    buttonTitle: StringConst.HIRE_ME,
+                    buttonTitle: StringConst.HIRE_US,
                     buttonColor: AppColors.primaryColor,
                     onPressed: () {},
                   ),
@@ -328,7 +328,8 @@ class _FooterSectionState extends State<FooterSection> {
                 Spacer(flex: 2),
                 Text(
                   StringConst.LETS_TALK,
-                  style: textTheme.headline3?.copyWith(color: AppColors.white),
+                  style:
+                      textTheme.displaySmall?.copyWith(color: AppColors.white),
                 ),
                 Spacer(),
                 Row(
@@ -342,7 +343,7 @@ class _FooterSectionState extends State<FooterSection> {
                 Spacer(),
                 NimBusButtonLink(
                   url: StringConst.EMAIL_URL,
-                  buttonTitle: StringConst.HIRE_ME,
+                  buttonTitle: StringConst.HIRE_US,
                   buttonColor: AppColors.primaryColor,
                 ),
                 Spacer(flex: 2),
@@ -379,14 +380,14 @@ class FooterItem extends StatelessWidget {
         SpaceH8(),
         Text(
           title,
-          style: textTheme.subtitle1?.copyWith(
+          style: textTheme.titleMedium?.copyWith(
             color: AppColors.white,
           ),
         ),
         SpaceH8(),
         Text(
           subtitle,
-          style: textTheme.bodyText1?.copyWith(
+          style: textTheme.bodyLarge?.copyWith(
             color: AppColors.grey250,
           ),
         ),

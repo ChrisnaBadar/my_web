@@ -46,6 +46,7 @@ class ImagePath {
   static const String DEV_HEADER = "$imageDir/dev_header.png";
   static const String DEV_AWARD = "$imageDir/dev_award.png";
   static const String GHANA_FLAG = "$imageDir/ghana_flag.png";
+  static const String INDONESIA_FLAG = "$imageDir/indonesia_flag.jpg";
 
   // Blog Images
   static const String BLOG_01 = "$imageDir/blog_01.jpg";
@@ -185,43 +186,84 @@ class ImagePath {
       '$imageDir/portofolio_gedung_stai_20.jpg';
   //salatiga
   static const String PORTOFOLIO_DTP_SALATIGA_1 =
-      '$imageDir/portofolio_dtp_salatiga_1.jpg';
+      '$imageDir/portofolio_dtp_salatiga_1.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_2 =
-      '$imageDir/portofolio_dtp_salatiga_2.jpg';
+      '$imageDir/portofolio_dtp_salatiga_2.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_3 =
-      '$imageDir/portofolio_dtp_salatiga_3.jpg';
+      '$imageDir/portofolio_dtp_salatiga_3.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_4 =
-      '$imageDir/portofolio_dtp_salatiga_4.jpg';
+      '$imageDir/portofolio_dtp_salatiga_4.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_5 =
-      '$imageDir/portofolio_dtp_salatiga_5.jpg';
+      '$imageDir/portofolio_dtp_salatiga_5.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_6 =
-      '$imageDir/portofolio_dtp_salatiga_6.jpg';
+      '$imageDir/portofolio_dtp_salatiga_6.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_7 =
-      '$imageDir/portofolio_dtp_salatiga_7.jpg';
+      '$imageDir/portofolio_dtp_salatiga_7.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_8 =
-      '$imageDir/portofolio_dtp_salatiga_8.jpg';
+      '$imageDir/portofolio_dtp_salatiga_8.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_9 =
-      '$imageDir/portofolio_dtp_salatiga_9.jpg';
+      '$imageDir/portofolio_dtp_salatiga_9.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_10 =
-      '$imageDir/portofolio_dtp_salatiga_10.jpg';
+      '$imageDir/portofolio_dtp_salatiga_10.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_11 =
-      '$imageDir/portofolio_dtp_salatiga_11.jpg';
+      '$imageDir/portofolio_dtp_salatiga_11.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_12 =
-      '$imageDir/portofolio_dtp_salatiga_12.jpg';
+      '$imageDir/portofolio_dtp_salatiga_12.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_13 =
-      '$imageDir/portofolio_dtp_salatiga_13.jpg';
+      '$imageDir/portofolio_dtp_salatiga_13.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_14 =
-      '$imageDir/portofolio_dtp_salatiga_14.jpg';
+      '$imageDir/portofolio_dtp_salatiga_14.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_15 =
-      '$imageDir/portofolio_dtp_salatiga_15.jpg';
+      '$imageDir/portofolio_dtp_salatiga_15.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_16 =
-      '$imageDir/portofolio_dtp_salatiga_16.jpg';
+      '$imageDir/portofolio_dtp_salatiga_16.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_17 =
-      '$imageDir/portofolio_dtp_salatiga_17.jpg';
+      '$imageDir/portofolio_dtp_salatiga_17.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_18 =
-      '$imageDir/portofolio_dtp_salatiga_18.jpg';
+      '$imageDir/portofolio_dtp_salatiga_18.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_19 =
-      '$imageDir/portofolio_dtp_salatiga_19.jpg';
+      '$imageDir/portofolio_dtp_salatiga_19.jpeg';
   static const String PORTOFOLIO_DTP_SALATIGA_20 =
-      '$imageDir/portofolio_dtp_salatiga_20.jpg';
+      '$imageDir/portofolio_dtp_salatiga_20.jpeg';
+  //ciparay
+  static const String PORTOFOLIO_MASJID_CIPARAY_1 =
+      '$imageDir/portofolio_masjid_ciparay_1.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_2 =
+      '$imageDir/portofolio_masjid_ciparay_2.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_3 =
+      '$imageDir/portofolio_masjid_ciparay_3.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_4 =
+      '$imageDir/portofolio_masjid_ciparay_4.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_5 =
+      '$imageDir/portofolio_masjid_ciparay_5.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_6 =
+      '$imageDir/portofolio_masjid_ciparay_6.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_7 =
+      '$imageDir/portofolio_masjid_ciparay_7.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_8 =
+      '$imageDir/portofolio_masjid_ciparay_8.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_9 =
+      '$imageDir/portofolio_masjid_ciparay_9.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_10 =
+      '$imageDir/portofolio_masjid_ciparay_10.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_11 =
+      '$imageDir/portofolio_masjid_ciparay_11.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_12 =
+      '$imageDir/portofolio_masjid_ciparay_12.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_13 =
+      '$imageDir/portofolio_masjid_ciparay_13.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_14 =
+      '$imageDir/portofolio_masjid_ciparay_14.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_15 =
+      '$imageDir/portofolio_masjid_ciparay_15.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_16 =
+      '$imageDir/portofolio_masjid_ciparay_16.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_17 =
+      '$imageDir/portofolio_masjid_ciparay_17.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_18 =
+      '$imageDir/portofolio_masjid_ciparay_18.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_19 =
+      '$imageDir/portofolio_masjid_ciparay_19.jpg';
+  static const String PORTOFOLIO_MASJID_CIPARAY_20 =
+      '$imageDir/portofolio_masjid_ciparay_20.jpg';
 }

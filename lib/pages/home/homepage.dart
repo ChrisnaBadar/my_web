@@ -199,10 +199,10 @@ class _HomepageState extends State<Homepage>
                           //   child: AwardsSection(),
                           // ),
                           // SpaceH40(),
-                          Container(
-                            key: navItems[4].key,
-                            child: BlogSection(),
-                          ),
+                          // Container(
+                          //   key: navItems[4].key,
+                          //   child: BlogSection(),
+                          // ),
                           FooterSection(),
                         ],
                       )

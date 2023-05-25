@@ -117,7 +117,9 @@ class _ProjectsSectionState extends State<ProjectsSection>
                     NimbusButton(
                       buttonTitle: StringConst.ALL_PROJECTS,
                       buttonColor: AppColors.primaryColor,
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/portofolioPage');
+                      },
                     ),
                     SpaceH40(),
                     Wrap(

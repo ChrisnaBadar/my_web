@@ -208,18 +208,18 @@ class StringConst {
   static const String BLOGGING = "Blogging";
 
   //Footer Section
-  static const String LETS_TALK = "Let's Talk!";
-  static const String PHONE_ME = "Phone Me";
-  static const String PHONE_NUMBER = "+1 800 123 456 789";
-  static const String MAIL_ME = "Mail Me";
-  static const String FOLLOW_ME_2 = "Follow Me";
+  static const String LETS_TALK = "Let's Talk Bussiness";
+  static const String PHONE_ME = "Contact Us";
+  static const String PHONE_NUMBER = "(022) 200 7134";
+  static const String MAIL_ME = "Mail Us";
+  static const String FOLLOW_ME_2 = "Follow Us";
   static const String FOLLOW_ME_2_URL = "behance.net/nimbus2000";
-  static const String RIGHTS_RESERVED = "© 2021 All rights reserved";
+  static const String RIGHTS_RESERVED = "© 2023 All rights reserved";
   static const String BUILT_BY = "Built with Flutter by";
   static const String DAVID_COBBINA = "Zatunr Studio";
   static const String DESIGNED_BY = "Designed by";
   static const String WEB_GENIUS_LAB = "Chrisna Badar";
-  static const String MADE_IN_GHANA = "Made in";
+  static const String MADE_IN = "Made in";
   static const String WITH_LOVE = "with";
   static const String FIND_ME = "Find me on..";
 
@@ -1029,4 +1029,24 @@ class StringConst {
   static const String PORTOFOLIO_CONSTRUCTION_163_VALUE = 'Rp. 670,916,785.-';
   static const String PORTOFOLIO_CONSTRUCTION_163_YEAR = '2021';
   static const String PORTOFOLIO_CONSTRUCTION_163_CLIENT = 'Adeda';
+  static const String PORTOFOLIO_CONSTRUCTION_164_TITLE = 'Masjid Sukajadi';
+  static const String PORTOFOLIO_CONSTRUCTION_164_VALUE = 'Rp. -';
+  static const String PORTOFOLIO_CONSTRUCTION_164_YEAR = '2023';
+  static const String PORTOFOLIO_CONSTRUCTION_164_CLIENT =
+      'DKM Masjid Sukajadi';
+  static const String PORTOFOLIO_CONSTRUCTION_165_TITLE = 'Masjid Cianjur';
+  static const String PORTOFOLIO_CONSTRUCTION_165_VALUE = 'Rp. -';
+  static const String PORTOFOLIO_CONSTRUCTION_165_YEAR = '2023';
+  static const String PORTOFOLIO_CONSTRUCTION_165_CLIENT =
+      'DKM Masjid Sukajadi';
+  static const String PORTOFOLIO_CONSTRUCTION_166_TITLE = 'Gedung STAI';
+  static const String PORTOFOLIO_CONSTRUCTION_166_VALUE = 'Rp. -';
+  static const String PORTOFOLIO_CONSTRUCTION_166_YEAR = '2023';
+  static const String PORTOFOLIO_CONSTRUCTION_166_CLIENT =
+      'DKM Masjid Sukajadi';
+  static const String PORTOFOLIO_CONSTRUCTION_167_TITLE = 'DTP Salatiga';
+  static const String PORTOFOLIO_CONSTRUCTION_167_VALUE = 'Rp. -';
+  static const String PORTOFOLIO_CONSTRUCTION_167_YEAR = '2023';
+  static const String PORTOFOLIO_CONSTRUCTION_167_CLIENT =
+      'DKM Masjid Sukajadi';
 }
