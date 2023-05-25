@@ -106,68 +106,6 @@ class _PortofolioPageState extends State<PortofolioPage> {
                                       fontSize: 50.0,
                                       fontWeight: FontWeight.bold)),
                             ),
-                            SelectableText(
-                              'Daftar Proyek',
-                              style: GoogleFonts.montserrat(
-                                  textStyle: TextStyle(fontSize: 25)),
-                            ),
-                            Expanded(
-                              child: ListView.builder(
-                                itemCount: Data.allConstProjects.length,
-                                itemBuilder: (context, index) {
-                                  return Padding(
-                                    padding: const EdgeInsets.only(top: 16.0),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.end,
-                                      children: [
-                                        SelectableText(
-                                          Data.allConstProjects[index].title,
-                                          style: GoogleFonts.montserrat(
-                                              textStyle: TextStyle(
-                                            fontSize: 30.5,
-                                          )),
-                                          textAlign: TextAlign.right,
-                                        ),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          children: [
-                                            SelectableText(
-                                              'Client: ${Data.allConstProjects[index].client}',
-                                              style: GoogleFonts.montserrat(
-                                                  textStyle: TextStyle(
-                                                fontSize: 12.5,
-                                              )),
-                                              textAlign: TextAlign.right,
-                                            ),
-                                            SizedBox(
-                                              width: 16.0,
-                                            ),
-                                            SelectableText(
-                                              'Tahun: ${Data.allConstProjects[index].year}',
-                                              style: GoogleFonts.montserrat(
-                                                  textStyle: TextStyle(
-                                                fontSize: 12.5,
-                                              )),
-                                              textAlign: TextAlign.right,
-                                            ),
-                                          ],
-                                        ),
-                                        SelectableText(
-                                          'Nilai Proyek: ${Data.allConstProjects[index].value}',
-                                          style: GoogleFonts.montserrat(
-                                              textStyle: TextStyle(
-                                            fontSize: 12.5,
-                                          )),
-                                          textAlign: TextAlign.right,
-                                        ),
-                                      ],
-                                    ),
-                                  );
-                                },
-                              ),
-                            )
                           ],
                         ),
                       ),
