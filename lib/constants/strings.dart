@@ -47,6 +47,7 @@ class StringConst {
   static const String JAVASCRIPT = "Javascript";
   static const String HTML = "HTML";
   static const String CSS = "CSS";
+  static const String MEMBER = "Member";
 
   //AboutUs construction Section
   static const String ABOUT_CONST = "about construction";

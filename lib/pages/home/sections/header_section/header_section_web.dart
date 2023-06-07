@@ -254,14 +254,14 @@ class _HeaderSectionWebState extends State<HeaderSectionWeb>
                                 ),
                                 SpaceW16(),
                                 NimbusButton(
-                                  width: buttonWidth,
-                                  height: buttonHeight,
-                                  buttonTitle: StringConst.CONTACT_US,
-                                  opensUrl: true,
-                                  url: StringConst.EMAIL_URL,
-                                  // onPressed: () =>
-                                  //     openUrlLink(StringConst.EMAIL_URL),
-                                ),
+                                    width: buttonWidth,
+                                    height: buttonHeight,
+                                    buttonTitle: StringConst.MEMBER,
+
+                                    // opensUrl: true,
+                                    // url: StringConst.EMAIL_URL,
+                                    onPressed: () => Navigator.pushNamed(
+                                        context, '/memberPage')),
                                 // NimBusButtonLink(
                                 //   width: buttonWidth,
                                 //   height: buttonHeight,
