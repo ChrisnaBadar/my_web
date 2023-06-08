@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Layout(
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'PT. GSP',
         theme: ThemeData(
           primarySwatch: Colors.blue,
