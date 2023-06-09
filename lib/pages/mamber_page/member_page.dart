@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:layout/layout.dart';
 
 class MemberPage extends StatefulWidget {
   const MemberPage({super.key});
@@ -11,6 +12,18 @@ class MemberPage extends StatefulWidget {
 class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
   late AnimationController animationController;
   late AnimationController rotationAnimation;
+
+  int navigatorFlex = 1;
+  int dashboardFlex = 5;
+
+  double navLeftPad = 8.0;
+  double navRightPad = 8.0;
+  double navTopPad = 8.0;
+  double navBottomPad = 8.0;
+  double dashLeftPad = 32.0;
+  double dashRightPad = 32.0;
+  double dashTopPad = 16.0;
+  double dashBottomPad = 16.0;
 
   @override
   void initState() {
@@ -46,9 +59,9 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
         body: Row(
       children: [
         //Navigator
-        Expanded(flex: 1, child: _navigator()),
+        //Expanded(flex: navigatorFlex, child: _navigator()),
         //dashboard
-        Expanded(flex: 5, child: _dashboard())
+        Expanded(flex: 1, child: _dashboard())
       ],
     ));
   }
@@ -145,8 +158,11 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
             width: _dashboardWidth,
             child: SingleChildScrollView(
               child: Padding(
-                padding: const EdgeInsets.only(
-                    left: 32.0, right: 32.0, top: 16.0, bottom: 16.0),
+                padding: EdgeInsets.only(
+                    left: dashLeftPad,
+                    right: dashRightPad,
+                    top: dashTopPad,
+                    bottom: dashBottomPad),
                 child: Container(
                   width: MediaQuery.of(context).size.width * .25,
                   height: 500,
@@ -178,7 +194,7 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
                                 width: 8.0,
                               ),
                               Text(
-                                'Projects Summaries ${MediaQuery.of(context).size.width}',
+                                'Projects Summaries $_dashboardWidth',
                                 style: GoogleFonts.montserrat(
                                     textStyle: TextStyle(
                                         color: Colors.blueGrey[700],
@@ -210,21 +226,34 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
                             rows: [
                               DataRow(cells: [
                                 DataCell(SizedBox(
-                                    width: _dashboardWidth < 1300
-                                        ? _dashboardWidth * .1
-                                        : _dashboardWidth * .2,
+                                    width:
+                                        context.breakpoint > LayoutBreakpoint.sm
+                                            ? _dashboardWidth * .2
+                                            : _dashboardWidth * .1,
                                     child: Text('Masjid'))),
                                 DataCell(SizedBox(
-                                    width: _dashboardWidth * .05,
+                                    width:
+                                        context.breakpoint > LayoutBreakpoint.sm
+                                            ? _dashboardWidth * .1
+                                            : _dashboardWidth * .05,
                                     child: Text('12 SPK'))),
                                 DataCell(SizedBox(
-                                    width: _dashboardWidth * .1,
+                                    width:
+                                        context.breakpoint > LayoutBreakpoint.sm
+                                            ? _dashboardWidth * .1
+                                            : _dashboardWidth * .05,
                                     child: Text('Rp. 11 Miliar'))),
                                 DataCell(SizedBox(
-                                    width: _dashboardWidth * .1,
+                                    width:
+                                        context.breakpoint > LayoutBreakpoint.sm
+                                            ? _dashboardWidth * .1
+                                            : _dashboardWidth * .05,
                                     child: Text('3 Site Plan'))),
                                 DataCell(SizedBox(
-                                    width: _dashboardWidth * .1,
+                                    width:
+                                        context.breakpoint > LayoutBreakpoint.sm
+                                            ? _dashboardWidth * .1
+                                            : _dashboardWidth * .05,
                                     child: Text('224 Foto'))),
                               ])
                             ]),
