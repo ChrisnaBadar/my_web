@@ -59,9 +59,11 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
         body: Row(
       children: [
         //Navigator
-        //Expanded(flex: navigatorFlex, child: _navigator()),
+        context.breakpoint > LayoutBreakpoint.sm
+            ? Expanded(flex: navigatorFlex, child: _navigator())
+            : Container(),
         //dashboard
-        Expanded(flex: 1, child: _dashboard())
+        Expanded(flex: dashboardFlex, child: _dashboard())
       ],
     ));
   }
@@ -194,7 +196,7 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
                                 width: 8.0,
                               ),
                               Text(
-                                'Projects Summaries $_dashboardWidth',
+                                'Dashboard Width: ${_calculatedDashboardWidth(_dashboardWidth, 6)} media width: $_dashboardWidth',
                                 style: GoogleFonts.montserrat(
                                     textStyle: TextStyle(
                                         color: Colors.blueGrey[700],
@@ -207,56 +209,66 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
                       Divider(
                         height: 1,
                       ),
-                      SizedBox(
-                        child: DataTable(
-                            border: TableBorder(
-                                top: BorderSide(),
-                                bottom: BorderSide(),
-                                left: BorderSide(),
-                                right: BorderSide(),
-                                horizontalInside: BorderSide(),
-                                verticalInside: BorderSide()),
-                            columns: [
-                              DataColumn(label: Text('Nama Proyek')),
-                              DataColumn(label: Text('Jumlah SPK')),
-                              DataColumn(label: Text('Nilai Proyek')),
-                              DataColumn(label: Text('Gambar Proyek')),
-                              DataColumn(label: Text('Foto Proyek')),
-                            ],
-                            rows: [
-                              DataRow(cells: [
-                                DataCell(SizedBox(
-                                    width:
-                                        context.breakpoint > LayoutBreakpoint.sm
-                                            ? _dashboardWidth * .2
-                                            : _dashboardWidth * .1,
-                                    child: Text('Masjid'))),
-                                DataCell(SizedBox(
-                                    width:
-                                        context.breakpoint > LayoutBreakpoint.sm
-                                            ? _dashboardWidth * .1
-                                            : _dashboardWidth * .05,
-                                    child: Text('12 SPK'))),
-                                DataCell(SizedBox(
-                                    width:
-                                        context.breakpoint > LayoutBreakpoint.sm
-                                            ? _dashboardWidth * .1
-                                            : _dashboardWidth * .05,
-                                    child: Text('Rp. 11 Miliar'))),
-                                DataCell(SizedBox(
-                                    width:
-                                        context.breakpoint > LayoutBreakpoint.sm
-                                            ? _dashboardWidth * .1
-                                            : _dashboardWidth * .05,
-                                    child: Text('3 Site Plan'))),
-                                DataCell(SizedBox(
-                                    width:
-                                        context.breakpoint > LayoutBreakpoint.sm
-                                            ? _dashboardWidth * .1
-                                            : _dashboardWidth * .05,
-                                    child: Text('224 Foto'))),
-                              ])
-                            ]),
+                      Container(
+                        color: Colors.blueGrey[700],
+                        height: 2,
+                        width: _calculatedDashboardWidth(
+                            _dashboardWidth, (navigatorFlex + dashboardFlex)),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+                        child: InteractiveViewer(
+                          scaleEnabled: false,
+                          child: DataTable(
+                              border: TableBorder(
+                                  top: BorderSide(),
+                                  bottom: BorderSide(),
+                                  left: BorderSide(),
+                                  right: BorderSide(),
+                                  horizontalInside: BorderSide(),
+                                  verticalInside: BorderSide()),
+                              columns: [
+                                DataColumn(label: Text('Nama Proyek')),
+                                DataColumn(label: Text('Jumlah SPK')),
+                                DataColumn(label: Text('Nilai Proyek')),
+                                DataColumn(label: Text('Gambar Proyek')),
+                                DataColumn(label: Text('Foto Proyek')),
+                              ],
+                              rows: [
+                                DataRow(cells: [
+                                  DataCell(SizedBox(
+                                      width: context.breakpoint >
+                                              LayoutBreakpoint.sm
+                                          ? _dashboardWidth * .15
+                                          : _dashboardWidth * .1,
+                                      child: Text('Masjid'))),
+                                  DataCell(SizedBox(
+                                      width: context.breakpoint >
+                                              LayoutBreakpoint.sm
+                                          ? _dashboardWidth * .05
+                                          : _dashboardWidth * .05,
+                                      child: Text('12 SPK'))),
+                                  DataCell(SizedBox(
+                                      width: context.breakpoint >
+                                              LayoutBreakpoint.sm
+                                          ? _dashboardWidth * .05
+                                          : _dashboardWidth * .05,
+                                      child: Text('Rp. 11 Miliar'))),
+                                  DataCell(SizedBox(
+                                      width: context.breakpoint >
+                                              LayoutBreakpoint.sm
+                                          ? _dashboardWidth * .05
+                                          : _dashboardWidth * .05,
+                                      child: Text('3 Site Plan'))),
+                                  DataCell(SizedBox(
+                                      width: context.breakpoint >
+                                              LayoutBreakpoint.sm
+                                          ? _dashboardWidth * .05
+                                          : _dashboardWidth * .05,
+                                      child: Text('224 Foto'))),
+                                ])
+                              ]),
+                        ),
                       )
                     ],
                   ),
@@ -269,5 +281,12 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
         //Dashboard body
       ],
     );
+  }
+
+  double _calculatedDashboardWidth(double mediaWidth, int flexCount) {
+    double navWidth = (mediaWidth / flexCount);
+    double calculatedWidth =
+        (mediaWidth - navWidth) - (dashLeftPad + dashRightPad);
+    return calculatedWidth;
   }
 }
