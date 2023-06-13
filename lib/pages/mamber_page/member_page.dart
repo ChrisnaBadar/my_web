@@ -228,43 +228,63 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
                                   horizontalInside: BorderSide(),
                                   verticalInside: BorderSide()),
                               columns: [
-                                DataColumn(label: Text('Nama Proyek')),
-                                DataColumn(label: Text('Jumlah SPK')),
-                                DataColumn(label: Text('Nilai Proyek')),
-                                DataColumn(label: Text('Gambar Proyek')),
-                                DataColumn(label: Text('Foto Proyek')),
+                                DataColumn(
+                                    label: SizedBox(
+                                  width: _firstColumnWidth(_dashboardWidth),
+                                  child: Text(
+                                    'Nama Proyek',
+                                    overflow: TextOverflow.fade,
+                                  ),
+                                )),
+                                DataColumn(
+                                    label: SizedBox(
+                                        width:
+                                            _otherColumnWidth(_dashboardWidth),
+                                        child: Text(
+                                          'Jumlah SPK',
+                                          overflow: TextOverflow.fade,
+                                        ))),
+                                DataColumn(
+                                    label: SizedBox(
+                                        width:
+                                            _otherColumnWidth(_dashboardWidth),
+                                        child: Text(
+                                          'Nilai Proyek',
+                                          overflow: TextOverflow.fade,
+                                        ))),
+                                DataColumn(
+                                    label: SizedBox(
+                                        width:
+                                            _otherColumnWidth(_dashboardWidth),
+                                        child: Text(
+                                          'Gambar Proyek',
+                                          overflow: TextOverflow.fade,
+                                        ))),
+                                DataColumn(
+                                    label: SizedBox(
+                                        width:
+                                            _otherColumnWidth(_dashboardWidth),
+                                        child: Text(
+                                          'Foto Proyek',
+                                          overflow: TextOverflow.fade,
+                                        ))),
                               ],
                               rows: [
                                 DataRow(cells: [
                                   DataCell(SizedBox(
-                                      width: context.breakpoint >
-                                              LayoutBreakpoint.sm
-                                          ? _dashboardWidth * .15
-                                          : _dashboardWidth * .1,
+                                      width: _firstColumnWidth(_dashboardWidth),
                                       child: Text('Masjid'))),
                                   DataCell(SizedBox(
-                                      width: context.breakpoint >
-                                              LayoutBreakpoint.sm
-                                          ? _dashboardWidth * .05
-                                          : _dashboardWidth * .05,
+                                      width: _otherColumnWidth(_dashboardWidth),
                                       child: Text('12 SPK'))),
                                   DataCell(SizedBox(
-                                      width: context.breakpoint >
-                                              LayoutBreakpoint.sm
-                                          ? _dashboardWidth * .05
-                                          : _dashboardWidth * .05,
+                                      width: _otherColumnWidth(_dashboardWidth),
                                       child: Text('Rp. 11 Miliar'))),
                                   DataCell(SizedBox(
-                                      width: context.breakpoint >
-                                              LayoutBreakpoint.sm
-                                          ? _dashboardWidth * .05
-                                          : _dashboardWidth * .05,
+                                      width: _otherColumnWidth(_dashboardWidth),
                                       child: Text('3 Site Plan'))),
                                   DataCell(SizedBox(
-                                      width: context.breakpoint >
-                                              LayoutBreakpoint.sm
-                                          ? _dashboardWidth * .05
-                                          : _dashboardWidth * .05,
+                                      width: _otherColumnWidth(_dashboardWidth),
                                       child: Text('224 Foto'))),
                                 ])
                               ]),
@@ -281,6 +301,20 @@ class _MemberPageState extends State<MemberPage> with TickerProviderStateMixin {
         //Dashboard body
       ],
     );
+  }
+
+  double _firstColumnWidth(double mediaWidth) {
+    double calculatedWidth = context.breakpoint > LayoutBreakpoint.sm
+        ? mediaWidth * .15
+        : mediaWidth * .1;
+    return calculatedWidth;
+  }
+
+  double _otherColumnWidth(double mediaWidth) {
+    double calculatedWidth = context.breakpoint > LayoutBreakpoint.sm
+        ? mediaWidth * .075
+        : mediaWidth * .05;
+    return calculatedWidth;
   }
 
   double _calculatedDashboardWidth(double mediaWidth, int flexCount) {
