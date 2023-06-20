@@ -29,9 +29,16 @@ class _MemberPageNavigationState extends State<MemberPageNavigation> {
             ),
           ),
           const Divider(),
+          SizedBox(
+            height: 32.0,
+          ),
 
           //Navigator Body
-          _mainExpandable()
+          _mainExpandable(),
+          SizedBox(
+            height: 32.0,
+          ),
+          _yaumiPage()
         ],
       ),
     );
@@ -44,13 +51,23 @@ class _MemberPageNavigationState extends State<MemberPageNavigation> {
     MemberNavigationModel(buttonTitle: 'Proyek Outsourcing')
   ];
 
+  List<MemberNavigationModel> yaumiNavigationData = [
+    MemberNavigationModel(buttonTitle: 'Yaumi'),
+    MemberNavigationModel(buttonTitle: 'Absen Online'),
+    MemberNavigationModel(buttonTitle: 'Payroll Receipt')
+  ];
+
   _mainExpandable() => _navigationItemWidget(
       header: 'MAIN',
       expandableTitle: 'Dashboard',
       icon: Icons.home,
       mainNavigationData: mainNavigationData);
 
-  _yaumiPage() => Container();
+  _yaumiPage() => _navigationItemWidget(
+      header: 'PERSONAL',
+      expandableTitle: 'Info Karyawan',
+      icon: Icons.person,
+      mainNavigationData: yaumiNavigationData);
   _absenPage() => Container();
   _outsourcingPage() => Container();
   _propertyPage() => Container();

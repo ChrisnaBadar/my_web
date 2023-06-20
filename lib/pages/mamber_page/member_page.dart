@@ -25,7 +25,11 @@ class _MemberPageState extends State<MemberPage> {
             ? Expanded(flex: navigatorFlex, child: MemberPageNavigation())
             : Container(),
         //dashboard
-        Expanded(flex: dashboardFlex, child: MemberPageDashboard())
+        Expanded(
+            flex: dashboardFlex,
+            child: MemberPageDashboard(
+              activatedPage: 0,
+            ))
       ],
     ));
   }
