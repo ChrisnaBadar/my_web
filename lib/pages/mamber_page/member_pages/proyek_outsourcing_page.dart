@@ -10,10 +10,8 @@ class ProyekOutsourcingPage extends StatefulWidget {
 class _ProyekOutsourcingPageState extends State<ProyekOutsourcingPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text('OUTSOURCE'),
-      ),
+    return Center(
+      child: Text('OUTSOURCE'),
     );
   }
 }
