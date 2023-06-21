@@ -4,9 +4,7 @@ import 'package:my_web/layout/adaptive.dart';
 import 'package:my_web/pages/home/sections/header_section/widgets.dart';
 import 'package:my_web/pages/widgets/buttons/nimbus_button.dart';
 import 'package:my_web/pages/widgets/content_area.dart';
-import 'package:my_web/pages/widgets/buttons/nimbus_button_link.dart';
 import 'package:my_web/pages/widgets/spaces.dart';
-import 'package:my_web/utils/functions.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../../constants/values.dart';
